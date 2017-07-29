@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>delectServlet</servlet-name>
+    <servlet-class>servlet.delectServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>editServlet</servlet-name>
+    <servlet-class>servlet.editServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>modifyServlet</servlet-name>
+    <servlet-class>servlet.modifyServlet</servlet-class>
+  </servlet>
+<servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegServlet</servlet-name>
+    <servlet-class>servlet.RegServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>modifyuserServlet</servlet-name>
+    <servlet-class>servlet.modifyuserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>action</servlet-name>
+    <servlet-class>servlet.action</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>usercancel</servlet-name>
+    <servlet-class>servlet.usercancel</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>admincancel</servlet-name>
+    <servlet-class>servlet.admincancel</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>showallUserServlet</servlet-name>
+    <servlet-class>servlet.showallUserServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>delectServlet</servlet-name>
+    <url-pattern>/servlet/delectServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>editServlet</servlet-name>
+    <url-pattern>/servlet/editServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>modifyServlet</servlet-name>
+    <url-pattern>/servlet/modifyServlet</url-pattern>
+  </servlet-mapping>
+<servlet-mapping>
+    <servlet-name>RegServlet</servlet-name>
+    <url-pattern>/servlet/RegServlet</url-pattern>
+  </servlet-mapping>
+ <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/servlet/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>modifyuserServlet</servlet-name>
+    <url-pattern>/servlet/modifyuserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>action</servlet-name>
+    <url-pattern>/servlet/action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>usercancel</servlet-name>
+    <url-pattern>/servlet/usercancel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>admincancel</servlet-name>
+    <url-pattern>/servlet/admincancel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>showallUserServlet</servlet-name>
+    <url-pattern>/servlet/showallUserServlet</url-pattern>
+  </servlet-mapping>
+  
+
+  
+</web-app>
