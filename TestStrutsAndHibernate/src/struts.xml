@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<constant name="struts.i18n.encoding" value="UTF-8"/>
+<constant name="struts.ui.theme" value="simple" />
+<package name="default" extends="struts-default">
+
+<action name="userlogin" class="action.LoginAction" method="userlogin">
+<result name="welcomeuser">/welcomeuser.jsp</result>
+<result name="input">/userlogin.jsp</result>
+</action>
+
+<action name="adminlogin" class="action.LoginAction" method="adminlogin">
+<result name="welcomeadmin">/welcomeadmin.jsp</result>
+<result name="input">/adminlogin.jsp</result>
+</action>
+
+<action name="showallusers" class="action.showallUserServlet" method="showallusers">
+<result name="showallusers">/showallusers.jsp</result>
+<result name="input">/adminlogin.jsp</result>
+</action>
+
+<action name="register" class="action.register" method="register">
+<result name="success">/welcomeuser.jsp</result>
+<result name="input">/register.jsp</result>
+</action>
+
+<action name="modifyuser" class="action.modifyuserServlet" method="modifyuser">
+<result name="success">/welcomeuser.jsp</result>
+<result name="input">/index.jsp</result>
+</action>
+
+<action name="adminmodifusers" class="action.modifyuserServlet" method="adminmodifusers">
+<result name="success">/showallusers.jsp</result>
+<result name="input">/welcomeuser.jsp</result>
+</action>
+
+<action name="delect" class="action.delectServlet" method="delect">
+<result name="success">/showallusers.jsp</result>
+<result name="input">/index.jsp</result>
+</action>
+
+<action name="test1" class="action.LoginAction"  method="back1">  
+      <result>/servlet/usercancel</result><!--result配成servlet的url-pattern即可-->    
+  </action>
+  
+  <action name="test2" class="action.LoginAction"  method="back2">  
+      <result>/servlet/admincancel</result><!--result配成servlet的url-pattern即可-->    
+  </action>
+
+
+
+</package>
+</struts>

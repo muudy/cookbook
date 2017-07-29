@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project>
+  <container path="com.genuitec.runtime.library/com.genuitec.struts_2.1">
+    <disable type="custom_jars"/>
+    <custom-jar path="F:lib/qq缓存/1547210960/FileRecv/hibernate4.3.7基本包/antlr-2.7.7.jar"/>
+  </container>
+</project>
