@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">in callercorder</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title">in callercorder</string>
+    <string name="mluyin">No recording</string>
+    <string name="yue">M</string>
+    <string name="ri">D</string>
+    <string name="shi">h</string>
+    <string name="fen">m</string>
+    <string name="miao">s</string>
+    <string name="luyin">Start recording</string>
+    <string name="nlyyin">End recording</string>
+    <string name="mdianhua">Phone off the hook</string>
+    <string name="liebiao">List of recordings:</string>
+    <string name="shanchuwj">File Handling</string>
+    <string name="shanchu">Delete</string>
+    <string name="sc">Delete Files</string>
+    <string name="quxiao">E-Mail</string>
+    <string name="qx">Cancel</string>
+    <string name="lc">Use Process</string>
+    <string name="yi">1 phone number dialed Friends</string>
+    <string name="er">2 in the call interface, open or close the recording</string>
+    <string name="san">3 After the call recording file is saved in this location</string>
+    <string name="qly">Throughout the recording is open</string>
+    <string name="bqly">The whole recording is turned off</string>
+
+</resources>

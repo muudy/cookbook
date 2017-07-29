@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">in 전화 녹음</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title">in 전화 녹음</string>
+    <string name="mluyin">오디오 파일은 없습니다!</string>
+    <string name="yue">달</string>
+    <string name="ri">하루</string>
+    <string name="shi">시간</string>
+    <string name="fen">분</string>
+    <string name="miao">초</string>
+    <string name="luyin">녹음을 시작</string>
+    <string name="nlyyin">최종 기록</string>
+    <string name="mdianhua">오프 훅 전화를</string>
+    <string name="liebiao">녹음 목록：</string>
+    <string name="shanchuwj">파일 처리</string>
+    <string name="shanchu">삭제</string>
+    <string name="sc">파일 삭제</string>
+    <string name="quxiao">우편</string>
+    <string name="qx">취소</string>
+    <string name="lc">프로세스를 사용</string>
+    <string name="yi">1.친구의 전화 번호로 전화를 걸</string>
+    <string name="er">2.호출 인터페이스 중에 녹음을 열거 나 닫습니다</string>
+    <string name="san">3.통화 녹음 파일이이 위치에 저장 한 후</string>
+    <string name="qly">녹화가 열려 걸쳐</string>
+    <string name="bqly">모든 기록이 꺼져 있습니다</string>
+
+</resources>
