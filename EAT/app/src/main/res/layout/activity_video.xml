@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    >
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:src="@mipmap/startlx"/>
+
+    <Button
+        android:id="@+id/btnStartStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="录像"
+        android:backgroundTint="@color/orange_trans"
+        android:background="@drawable/shape_gray_square_bg"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/text"
+        android:layout_toEndOf="@+id/text" />
+
+    <Button
+        android:id="@+id/btnPlayVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="播放"
+        android:layout_marginLeft="5dp"
+        android:backgroundTint="@color/orange_trans"
+        android:background="@drawable/shape_gray_square_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btnStartStop"
+        android:layout_toEndOf="@+id/btnStartStop" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="0"
+        android:textColor="@color/orange"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="秒"
+        android:layout_alignLeft="@+id/text"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存"
+        android:backgroundTint="#DDFF6633"
+        android:background="@drawable/shape_gray_square_bg"
+        android:layout_alignTop="@+id/btnPlayVideo"
+        android:layout_toRightOf="@+id/btnPlayVideo"
+        android:layout_toEndOf="@+id/btnPlayVideo"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+
+</RelativeLayout>
