@@ -1,0 +1,86 @@
+﻿@model IEnumerable<MVCMovie.Models.Movie>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("新建", "Create")
+    @using (Html.BeginForm("Index", "Movies", FormMethod.Get))
+    {
+    <p>
+        电影类型:@Html.DropDownList("movieGenre", "all")
+        价格区间:@Html.TextBox("moneyfirst")-
+        @Html.TextBox("moneylast")
+        电影名称:@Html.TextBox("SearchString")
+        <input type="submit" value="查询" />
+    </p>
+    }
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReleaseDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Genre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rating)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReleaseDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Genre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rating)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $("[name='moneylast']").mouseout(function () {
+                var f = $("[name='moneyfirst']").val();
+                var l = $("[name='moneylast']").val();
+                if (f!=0&& l!=0)
+                {
+                    if (f > l)
+                    {
+                        $("[name='moneyfirst']").val(l);
+                        $("[name='moneylast']").val(f);
+                    }
+                }
+            });
+        });
+    </script>
+}
