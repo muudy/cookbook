@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/flowershop.css" />
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="header">
+            <div class="logo">
+                <a href="index"><img src="~/Content/images/logo.gif" alt="" title="" border="0" /></a>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li>@Html.ActionLink("首页", "Index", "TestLayout")</li>
+                    <li>@Html.ActionLink("关于花店", "About", "TestLayout")</li>
+                    <li>@Html.ActionLink("花的种类", "Category", "TestLayout")</li>
+                    <li>@Html.ActionLink("特别礼品", "Specials", "TestLayout")</li>
+                    <li>@Html.ActionLink("我的账号", "MyAccount", "TestLayout")</li>
+                    <li>@Html.ActionLink("注册账号", "Register", "TestLayout")</li>
+                    <li>@Html.ActionLink("花的信息", "Details", "TestLayout")</li>
+                    <li>@Html.ActionLink("联系我们", "Contact", "TestLayout")</li>
+                </ul>
+            </div>
+        </div><!--end of header-->
+        <div class="center_content">
+            <div class="left_content">
+                @RenderBody()
+            </div>
+            <div class="right_content">
+                <div class="languages_box">
+                    <span class="red">语言:</span>
+                    <a href="#" class="selected">
+                        <img src="~/Content/images/gb.gif" alt="" title="" border="0" />
+                    </a>
+                    <a href="#"><img src="~/Content/images/fr.gif" alt="" title="" border="0" /></a>
+                    <a href="#"><img src="~/Content/images/de.gif" alt="" title="" border="0" /></a>
+                </div>
+                <div class="currency">
+                    <span class="red">货币: </span>
+                    <a href="#" class="selected">RMB</a>
+                    <a href="#">EUR</a>
+                    <a href="#">USD</a>
+                </div>
+
+                <div class="cart">
+                    <div class="title">
+                        <span class="title_icon">
+                            <img src="~/Content/images/cart.gif" alt="" title="" />
+                        </span>
+                        我的购物车
+                    </div>
+                    <div class="home_cart_content">
+                        3个货物 | <span class="red">TOTAL: ￥100</span>
+                    </div>
+                    <a href="/TestLayout/cart" class="view_cart">查看</a>
+                </div>
+
+
+                @RenderPage("~/Views/TestLayout/TestPage.cshtml")
+            </div><!--end of right content-->
+            <div class="clear"></div>
+        </div><!--end of center content-->
+        <div class="footer">
+            <div class="left_footer">
+                <img src="~/Content/images/footer_logo.gif" alt="" title="" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
